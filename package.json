@@ -10,7 +10,8 @@
     "lint": "eslint . --fix",
     "lint:style": "stylelint **/*.{css,vue} --fix",
     "format": "prettier --write .",
-    "lint:all": "npm run lint && npm run lint:style && npm run format"
+    "lint:all": "npm run lint && npm run lint:style && npm run format",
+    "deploy": "npm run build && gh-pages -d dist --dotfiles"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
@@ -26,6 +27,7 @@
     "@vitejs/plugin-vue": "^5.2.4",
     "eslint": "^9.28.0",
     "eslint-plugin-vue": "^9.27.0",
+    "gh-pages": "^6.3.0",
     "postcss-html": "^1.8.0",
     "prettier": "^3.5.3",
     "stylelint": "^16.20.0",
